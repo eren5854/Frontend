@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown</title>
+    <style>
+        .dropdown{
+            position: relative;
+            cursor: pointer;
+        }
+        .dropdown-content{
+            height: 0px;
+            /* display: none; */
+            position: absolute;
+            /* top: -100%; */
+            padding: 0px 16px;
+            background-color: red;
+            color: white;
+            transition: height 0.5s;
+        }
+        .dropdown:hover .dropdown-content{
+            /*display: block;*/
+            height: 300%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <span>Mouse Over Me</span>
+    <div class="dropdown-content">
+        <p>Hello World</p>
+    </div> -->
+    <div class="dropdown">
+        <span>Mouse Over Me</span>
+        <div class="dropdown-content">
+            <p>Hello World</p>
+        </div>
+    </div>
+</body>
+</html>

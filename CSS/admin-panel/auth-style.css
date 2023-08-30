@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+.container{
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px;
+}
+.head{
+    text-align: center;
+    background-color: red;
+    padding: 15px;
+    border-radius: 15px;
+}
+.body{
+    padding: 15px;
+
+}
+    input{
+        width: 100%;
+        padding: 5px;
+        padding-left: 10px;
+        border-radius: 30px;
+    }
+    input[type="checkbox"]{
+        width: 17px;
+        height: 17px;
+        
+    }
+    .mt{
+        margin-top: 8px;
+    }
+    button{
+        width: 100%;
+        padding: 7px;
+        border-radius: 8px;
+        background-color: cadetblue;
+        border-color: cadetblue;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: aliceblue;
+    }
+    .checkbox{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .signup a{
+        float: right;
+        margin-bottom: 10px;
+        
+    }
