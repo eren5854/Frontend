@@ -23,6 +23,12 @@ body{
     z-index: 100;
 }
 
+.active{
+    background: linear-gradient(45deg, #c712a9, #00abf0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .header a{
     font-size: 25px;
     color: #ededed;
@@ -129,8 +135,7 @@ body{
 }
 
 .btn-box a:nth-child(1)::before{
-    background: #00abf0;
-    
+    background: linear-gradient(45deg, #c712a9, #00abf0);
 }
 
 .btn-box a::before{
@@ -147,6 +152,7 @@ body{
 
 .btn-box a:hover::before{
     width: 100%;
+    filter: blur(5px);
 }
 
 .home-sci{
@@ -166,13 +172,12 @@ body{
     height: 40px;
     background: transparent;
     border: 2px solid #00abf0;
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 20px;
     color: #00abf0;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    b
 }
 
 .home-sci a:hover{
@@ -193,4 +198,5 @@ body{
 
 .home-sci a:hover::before{
     width: 100%;
+    
 }
