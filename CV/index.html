@@ -5,21 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
         <div class="left-side">
             <div class="profileText">
                 <div class="imgBx">
-                    <img src="1.jpg" alt="">
+                    <img src="img/1.jpg" alt="">
                 </div>
-                <h2>İhsan Eren Delibaş<br><span>Full Stack Developer</span></h2>
+                <h2 id="sonucNameText">Ihsan Eren Delibaş<br></h2>
+                <span id="sonucTitleText">Full Stack Developer</span>
+            </div>
+            <div class="contact-info">
+                <h3 class="title">Contact</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class='fas fa-phone-alt'></i></span>
+                            <span class="text">+90 534 717 05 68</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class='fas fa-envelope'></i></span>
+                            <span class="text">ihsanerendelibas@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class='bx bxl-linkedin'></i></span>
+                            <a href="https://www.linkedin.com/in/ihsan-eren-deliba%C5%9F-208581159/" class="text">www.linkedin.com/me</a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class='bx bxl-github'></i></span>
+                            <a href="https://github.com/eren5854?tab=repositories" class="text">www.github.com</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="contact-info about">
+                <h3 class="title">About Me</h3>
+                    <ul>
+                        <li>
+                            <p>Lisans eğitimim boyunca donanım tasarım,
+                                gömülü sistemler, IOT, biomekatronik gibi
+                                alanlarda çalışmalarda bulundum.
+                                Biomekatronik ve IOT üzerine lisans tezim
+                                bulunmaktadır. Nesne tabanlı
+                                programlama, kullanıcı arayüzü geliştirme,
+                                android uygulama geliştirme gibi alanlara
+                                ilgi duyduğum için yüksek lisansımı
+                                bilgisayar mühendisliğinde yapmaktayım.
+                                Şuanda .net(C#), MSSQL ve HTML/CSS/JS alanlarında kendimi
+                                geliştirmekteyim.</p>
+                        </li>
+                    </ul>
+            </div>
+            
+            <div class="contact-info referance">
+                <h3 class="title">Referance</h3>
+                    <ul>
+                        <li>
+                            <h3>Mustafa Çağrı Kutlu</h3>
+                            <h5>Sakarya Uygulamalı Bilimler Üniversitesi </h5>
+                            <h5>Dr. Öğretim Üyesi</h5>
+                        </li>
+                        <li>
+                            <span class="icon"><i class='fas fa-envelope'></i></span>
+                            <a href="#">mkutlu@subu.edu.tr</a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class='fas fa-phone-alt'></i></span>
+                            <a href="#">0542 327 49 60</a>
+                        </li>
+                    </ul>
             </div>
         </div>
-        <div class="right-side"></div>
-    </div>
-    <div class="container">
+        <div class="right-side">
+            <div class="skills">
+                <ul class="skill-title">
+                    <li>
+                        <span>SKILLS</span>
+                    </li>
+                    <div class="logos">
+                        <img src="img/html.png" class="html">
+                        <img src="img/css.png" class="css">
+                        <img src="img/js.png" class="js">
+                        <img src="img/csharp.png" class="csharp">
+                        <img src="img/mssql.png" class="mssql">
+                        <img src="img/vs.png" class="vs">
+                    </div>
 
+                </ul>
+            </div>
+
+        </div>
     </div>
+    <div class="layout">
+        <input type="text" id="nameText">
+        <input type="text" id="titleText">
+        <button id="sendBtn">send</button>
+        <p id="sonuc"></p>
+    </div>
+    <script>
+        document.getElementById("sendBtn").addEventListener("click", function(){
+            var nameText = document.getElementById("nameText").value;
+            var titleText = document.getElementById("titleText").value;
+            document.getElementById("sonucNameText").textContent = nameText;
+            document.getElementById("sonucTitleText").textContent = titleText;
+        });
+    </script>
 </body>
 </html>
