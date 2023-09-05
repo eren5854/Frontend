@@ -15,6 +15,7 @@
         let experienceElementId = 1;
         let educationElementId = 1;
         let skillElementId = 1;
+        let referanceElementId = 1;
 
     function addMail(){
         mailElementId++;
@@ -112,6 +113,40 @@
     </div>`
 
             document.getElementById("addskill").innerHTML += value;
+    }
+
+    function addReferance(){
+        referanceElementId++;
+            const value = `<form id="addReferance-${referanceElementId}" action="#">
+            <div class="user-info">
+                <div class="user-inputbox">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="name-text" name="name-text" placeholder="Enter your referance name"/>
+                </div>
+
+                <div class="user-inputbox">
+                    <label for="title">Title</label>
+                    <input type="text" id="title-text" name="title-text" placeholder="Enter your referance title"/>
+                </div>
+
+                <div id="addphone" class="user-inputbox">
+                    <label for="phone"><i class="fas fa-phone contact-icon"></i>  Phone </label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" name="tel" placeholder="Enter your referance phone number"/>
+                </div>
+
+                <div id="addemail" class="user-inputbox">
+                    <label for="email"><i class="fas fa-envelope contact-icon"></i> Email </label>
+                    <input type="text" id="email" name="email" placeholder="Enter your referance email"/>
+                </div>
+                <button onclick="removeReferance('addReferance-${referanceElementId}')">-</button>
+            </div>
+
+            <div class="save-btn">
+                <input id="save-btn" type="button" value="Save">
+            </div>
+        </form>`
+    
+                document.getElementById("addReferance").innerHTML += value;
     }
 
         function removePhone(Id){
