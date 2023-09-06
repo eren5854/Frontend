@@ -1,31 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="about_style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo"><img src="img/code.png">Alternative Coding</a>
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About Me</a>
-            <a href="project.html">Projects</a>
-            <a href="game.html">Games</a>
-            <a href="contact.html">Contact</a>
-
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="game.html">Games</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="home">
-        <div class="home-content">
-            <!-- <h1>HI I'm Ihsan Eren Delibas</h1>
-            <h3>Full Stack Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat fugiat ducimus nostrum. Molestias officiis unde beatae vitae blanditiis perspiciatis totam officia, ut nobis voluptates nisi rem quia! Repellendus, magni!</p>
-            <div class="btn-box">
-                <a href="#">More About Me</a>
-            </div> -->
+        <div class="img-div">
+            <div class="box">
+                <div class="box-content">
+                    <img src="img/my-photo.png">
+                </div>
+            </div>
         </div>
+        <div class="home-content">
+            <h1 class="cv-title">Öz Geçmişim</h1>
+            <h3 class="cs-subtitle">Hakkımda</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus distinctio nam placeat magni vitae. Architecto officia harum iste aliquam minus inventore sapiente ab tenetur tempore quis, voluptas dignissimos hic earum.
+            Omnis blanditiis neque earum molestiae accusamus aperiam cupiditate. Consectetur facilis eius doloribus voluptatibus temporibus, quidem aliquid saepe iusto nemo deleniti tempore ea reprehenderit fuga totam cumque, est blanditiis cum rerum.
+            Ab reiciendis tempora aspernatur deserunt earum debitis quia velit cum iure quisquam laborum, magni suscipit consequatur rem, fuga sed minima voluptate, quibusdam et facilis necessitatibus dolores. Voluptas consequatur natus nulla.
+            Obcaecati quasi adipisci sequi mollitia deserunt ad? Minima non sapiente tempore sunt dolores corrupti blanditiis repudiandae minus veniam quaerat. Modi eum maxime iste, accusamus magnam deleniti ducimus accusantium et. Voluptates!
+            Esse nulla tenetur iure at repellendus molestias consequatur, quaerat cum perspiciatis, deserunt debitis, dolor expedita! Voluptatibus eos, explicabo deleniti temporibus ipsam sequi tenetur ea vero eius eum nam. Deleniti, culpa!
+            Consectetur, odit nam error voluptas pariatur optio eum sapiente. Nam illum dolores ullam, labore reiciendis voluptas est, maxime quis harum nisi aliquam aut molestiae deserunt optio commodi libero. Perferendis, nobis!
+            In eos at, error amet voluptates sed modi blanditiis quas qui earum omnis dignissimos, explicabo unde commodi iusto laudantium sunt! Velit omnis dolore dolor assumenda amet cum, tenetur perspiciatis vitae!
+            Minus dignissimos exercitationem recusandae, id quis est voluptas, tenetur accusantium nam esse obcaecati? Quisquam ratione consequatur distinctio harum quasi, neque explicabo blanditiis, est cum dignissimos, veritatis esse dolores accusantium ipsa!
+            Laboriosam dignissimos quisquam itaque consequuntur harum. Commodi voluptas, alias ducimus fuga dignissimos saepe. Qui sunt ratione iure inventore animi dicta earum modi provident. Placeat ex nisi harum veniam quaerat? Sed.
+            Quo eos commodi blanditiis architecto. Assumenda quibusdam sed minus ipsa soluta illum quam libero, amet ea tempora natus eius earum at sit reiciendis voluptates animi! Vitae velit quisquam repellat! Neque?</p>
+
+            <div class="information">
+                <div class="educations">
+                    <h2>Eğitim</h2>
+                    <div class="education-table-main">
+                        <h4>Üniversite</h4>
+                        <h4>Bölüm</h4>
+                        <h4>Derece</h4>
+                        <h4>Tarih</h4>
+                    </div>
+                    <hr>
+                    <div class="education-table-section">
+                        <h4>Sakarya Üniversitesi</h4>
+                        <h4>Mekatronik Mühendisliği</h4>
+                        <h4>Lisans</h4>
+                        <h4>2017 - 2022</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Sakarya Üniversitesi</h4>
+                        <h4 class="mek-müh">Bilgisayar Mühendisliği</h4>
+                        <h4>Yüksek Lisans</h4>
+                        <h4>2023 - ?</h4>
+                    </div>
+                </div>
+
+                <div class="educations">
+                    <h2>Deneyim</h2>
+                    <div class="education-table-main">
+                        <h4>Mevki</h4>
+                        <h4>Firma</h4>
+                        <h4>Birim</h4>
+                        <h4>Tarih</h4>
+                    </div>
+                    <hr>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>Partners Group</h4>
+                        <h4>Ar-Ge Tasarım</h4>
+                        <h4>Ocak 2017 - Şubat 2018</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>Balsu Gıda</h4>
+                        <h4>Bakım Mühendisi</h4>
+                        <h4>Mayıs 2019 - Haziran 2019</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>Xinerji Software</h4>
+                        <h4>Ar-Ge Yazılım</h4>
+                        <h4>Temmuz 2019 - Ağustos 2019</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>YMTM Teknoloji</h4>
+                        <h4>Ar-Ge Elektrik</h4>
+                        <h4>Şubat 2022 - Haziran 2022</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Test Mühendisi</h4>
+                        <h4>YMTM Teknoloji</h4>
+                        <h4>Ar-Ge Test</h4>
+                        <h4>Ağustos 2022 - Ağustos 2023</h4>
+                    </div>
+                </div>
+
+                <div class="educations">
+                    <h2>Beceriler</h2>
+                    <div class="education-table-main">
+                        <h4>Logo</h4>
+                        <h4>İsim</h4>
+                        <h4>Ustalık</h4>
+                        <h4>Tarih</h4>
+                    </div>
+                    <hr>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>HTML</h4>
+                        <h4>Orta Seviye</h4>
+                        <h4>Ocak 2017 - Şubat 2018</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>Balsu Gıda</h4>
+                        <h4>Bakım Mühendisi</h4>
+                        <h4>Mayıs 2019 - Haziran 2019</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>Xinerji Software</h4>
+                        <h4>Ar-Ge Yazılım</h4>
+                        <h4>Temmuz 2019 - Ağustos 2019</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Stajyer Mühendis</h4>
+                        <h4>YMTM Teknoloji</h4>
+                        <h4>Ar-Ge Elektrik</h4>
+                        <h4>Şubat 2022 - Haziran 2022</h4>
+                    </div>
+                    <div class="education-table-section">
+                        <h4>Test Mühendisi</h4>
+                        <h4>YMTM Teknoloji</h4>
+                        <h4>Ar-Ge Test</h4>
+                        <h4>Ağustos 2022 - Ağustos 2023</h4>
+                    </div>
+                </div>
+                
+            </div>
+        </div>     
+            
     </section>
     <div class="home-sci">
         <a href="https://github.com/eren5854?tab=repositories"><i class='bx bxl-github'></i></a>
