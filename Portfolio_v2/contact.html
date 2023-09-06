@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>My Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -10,12 +10,17 @@
     <header class="header">
         <a href="index.html" class="logo"><img src="img/code.png">Alternative Coding</a>
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="project.html">Projects</a>
-            <a href="game.html">Games</a>
-            <a href="contact.html" class="active">Contact</a>
-
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="game.html">Games</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="container">
