@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Password Generator</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #503E2F;
+            
+        }
+
+        .content{
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-width: 700px;
+            height: 100%;
+            background: #0c1161;
+            border-radius: 50px;
+            margin: 10%;
+            padding: 30px;
+        }    
+
+        .content h1{
+            text-align: center;
+            color: #1fba1c;
+            font-size: 50px;
+            padding: 0 20px 20px 0;
+
+        }
+
+        .content hr{
+            margin-bottom: 20px;
+        }
+
+        .content .input{
+            display: flex;
+            background: white;
+            font-size: 24px;
+            padding: 10px 10px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+
+        .input .line{
+            content: '';
+            width: 2px;
+            height: 30px;
+            background-color: #9e4b07;
+            position: relative;
+            left: 18px;
+        }
+
+        .input input{
+            border: 0;
+            outline: none;
+            width: 80%;
+            background: white;
+            font-size: 24px;
+            padding: 0px 0px 0 10px;
+           
+        }
+
+        .input .x{
+            display: flex;
+            position: relative;
+            max-width: 100px;
+            width: 100%;
+            margin-left: 20px;
+            
+        }
+
+        .x i{
+            font-size: 28px;
+            padding-right: 10px;
+        }
+
+        .x p{
+            display: none;
+            /* background: #0c1161; */
+            font-size: 16px;
+            border-radius: 20px;
+            margin-top: 5px;
+            color: #1fba1c;
+            font-weight: 600;
+        }
+           
+        .content button{
+            position: relative;
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 40%;
+            font-weight: 600;
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #5f0f85, #1c80ba);
+            outline: none;
+            border: 3px solid #1c80ba;
+            color: #0c1161;
+            transition: .5s ease-in-out;
+        }
+
+         .content button:hover{
+            transform: scale(1.35);
+         }
+
+         .box{
+            display: flex;
+            background: white;
+            padding: 20px 20px 20px 30px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+
+        .box .slider{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .box .slider .input-1{
+            height: 10px;
+            width: 100%;
+            -webkit-appearance: none;
+            outline: none;
+            border-radius: 50px;
+            background: #ddd;
+        }
+
+        .box .value-1{
+            font-size: 20px;
+            font-weight: 600;
+            width: 55px;
+            text-align: center;
+        }
+
+        .box .value-2{
+            font-size: 20px;
+            font-weight: 600;
+            width: 55px;
+        }
+
+        .box .input-1::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            background: #664aff;
+            border-radius: 50%;
+            border: 1px solid #664aff;
+            cursor: pointer;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="content">
+        <h1>Password Generator</h1>
+        <hr>
+        <div class="input">
+            <input type="text" id="password" placeholder="Password" required>
+            <div class="line">
+            </div>
+            <div class="x">
+                <i id="copyied" onclick="copyPassword()" class='bx bx-copy'></i>  
+                <p id="show-copy">Copied</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="value-2">8</div>
+            <div class="slider">
+                <input class="input-1" type="range" min="8" max="64" value="12">
+            </div>
+            <div class="value-1">64</div>
+            
+        </div>
+        <button onclick="createPassword()" id="btn">Generate</button>
+    </div>
+
+    <script>
+        const passwordBox = document.getElementById("password");
+        const btn = document.getElementById("btn");
+
+        const lenght = 12;
+
+        const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+
+        const number = "0123456789";
+        const symbol = "@#$%^&*()_+~|{}[]<>/-=";
+
+        const allChars = upperCase + lowerCase + number + symbol;
+
+        function createPassword(){
+            let password = "";
+            password += upperCase[Math.floor(Math.random() * upperCase.length)];
+            password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            password += number[Math.floor(Math.random() * number.length)];
+            password += upperCase[Math.floor(Math.random() * upperCase.length)];
+            password += symbol[Math.floor(Math.random() * symbol.length)];
+
+
+            while(value.textContent > password.length){
+                password += allChars[Math.floor(Math.random() * allChars.length)];
+
+            }
+            passwordBox.value = password;
+            show.style.display = "none";
+        }
+
+        let show = document.getElementById("show-copy");
+        let copyied = document.getElementById("copyied");
+
+        var a;
+        function copyPassword(){
+            passwordBox.select();
+            document.execCommand("copy");
+            if(show.style.display === "none"){
+                show.style.display = "inline";
+            }
+            else {
+                show.style.display = "none"; 
+            }
+        }
+        const slider = document.querySelector(".input-1");
+        const value = document.querySelector(".value-1");
+        value.textContent = slider.value;
+        slider.oninput = function(){
+            value.textContent = this.value;
+        }
+    </script>
+</body>
+</html>
