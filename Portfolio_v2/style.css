@@ -311,7 +311,7 @@ body{
     inset: -10px 100px;
     background: linear-gradient(315deg, #00ccff, #d400d4);
     transition: 0.5s;
-    animation: animate 4s linear infinite;
+    animation: animate 8s linear infinite;
 }
 
 .img-div .box:hover::before{
