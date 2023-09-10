@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My CV PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="resume" id="blog">
+        <div class="resume_container">
+            <div class="resume_information">
+                <div id="btnVisible" class="btn">
+                    <a href="edit.html" class="edit"><i class='bx bx-edit-alt' ></i></a>
+                    <button onclick=" addVisible(), window.print()" class="print-btn"><i class='bx bx-printer'></i></button>
+                </div>
+                <div class="resume_profile"> 
+                    <img src="img/1.jpg" alt="default pic" class="image"/>
+                    <div class="details">
+                        <p class="title" id="name"></p>
+                        <p class="subtitle" id="title"></p>
+                    </div>
+                </div>
+
+                <div class="resume_side-section">
+                    <p class="title">CONTACT</p>
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <i class="fas fa-phone contact-icon"></i>
+                        </div>
+                        <div class="col">
+                            <span id="userPhone"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <i class="fas fa-envelope contact-icon"></i>
+                        </div>
+                        <div class="col">
+                            <span id="userEmail"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <i class="fas fa-envelope contact-icon"></i>
+                        </div>
+                        <div class="col">
+                            <span>eren.delibas@sau.edu.tr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume_side-section">
+                    <p class="title">FOLLOW ME</p>
+                    <div id="medias" class="list">
+                        <!-- <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="https://github.com/eren5854?tab=repositories"><i class="bx bxl-github"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="https://www.linkedin.com/in/ihsan-eren-deliba%C5%9F-208581159/"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="#"><i class="bx bxl-youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="#"><i class="bx bxl-medium"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="resume_side-section">
+                    <p class="title">SKILLS</p>
+                    <div id="skills" class="logos">
+                        <!-- <div class="progress">
+                            <div class="my-2">HTML</div>
+                            <img class="html" src="img/html.png">       
+                        </div>
+    
+                        <div class="progress">
+                                <div class="my-2">CSS</div>
+                                <img class="css" src="img/css.png">       
+                        </div>
+    
+                        <div class="progress">
+                            <div class="my-2">JS</div>
+                            <img class="js" src="img/js.png">
+                        </div>
+    
+                        <div class="progress">
+                            <div class="my-2">C#</div>
+                            <img class="csharp" src="img/csharp.png">                
+                        </div>
+    
+                        
+                        <div class="progress">
+                            <div class="my-2">MS SQL</div>
+                            <img class="mssql" src="img/mssql.png">  
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="resume_information">
+                <div class="resume_intro">
+                    <h1 >ABOUT ME</h1>
+                    <div id="aboutText"></div>
+                </div>
+
+                <div class="resume_section">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="title">
+                            EXPERIENCE
+                        </p>
+                    </div>
+                    <div id="experiences">
+                        <!-- <div class="details">
+                            <div class="year">January2018 - February 2018</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-By Partners Group</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">May 2019 - June 2019</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-Balsu Gıda</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">July 2019-August 2019</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-Xinerji Software</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">February 2022 - June 2022</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-Yektamot</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">August 2022 - August 2023</div>
+                            <div class="info">
+                                <p class="title"><b>Test Engineer</b>-YMTM Technology</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="resume_section">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <p class="title">EDUCATION</p>
+                    </div>
+                    <div id="educations">
+                        <!-- <div class="details">
+                            <div class="year">2017-2022</div>
+                            <div class="info">
+                                <p class="title"><b>Mechanical Engineering </b>- Technology Faculty - Licance</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">2023-Present</div>
+                            <div class="info">
+                                <p class="title"><b>Computer Engineering </b>- Institute of Natural Sciences - Master Degree</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="resume_section">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p class="title">REFERANCE</p>
+                    </div>
+                    <div id="referances">
+                        <!-- <div class="details-referance">
+                            <div class="name"><b>Mustafa Çağrı Kutlu</b></div>
+                            <p class="title"><b>Doctoral faculty member</b></p>
+                            <p class="title">Sakarya Uygulamalı Bilimler Üniversitesi</p>
+                            <div class="row mb-2">
+                                <div class="col-auto">
+                                    <i class="fas fa-phone contact-icon"></i>
+                                </div>
+                                <div class="col">
+                                    <span>+90 05xx xxx xx xx</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-auto">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                </div>
+                                <div class="col">
+                                    <span>xxxxx@xxxxxx</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="x"><a href="#"><i class='bx bx-printer'></i></a></div> -->
+            </div>
+        </div>
+        
+    </div>
+    <div class="d-flex" id="spinner">
+        <h1 class="load-text">Sayfa Yükleniyor...</h1>
+        <div class="spinner"></div>
+    </div>
+    <div class="d-flex" id="error" style="display: none;">
+        <h1>Page Error! We are working on</h1>
+        <button id="try" onclick="tryAgain()">Try again</button>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="index-script.js"></script>
+</body>
+</html>
