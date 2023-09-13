@@ -29,8 +29,11 @@ body .edit{
 }
 
 .main-container{
-    /* display: flex;
-    flex-direction: column; */
+    background: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -45,7 +48,7 @@ body .edit{
 
 }
 
-.title{
+.edit-title{
     font-size: 30px;
     font-weight: 600;
     text-align: center;

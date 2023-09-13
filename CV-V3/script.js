@@ -44,7 +44,7 @@
                         <input type="text" id="link" name="link" placeholder="Enter your link"/>
                     </div>`
 
-            document.getElementById("addphone").innerHTML += value;
+            document.getElementById("addlink").innerHTML += value;
     }
 
     function addExperience(){
@@ -98,7 +98,7 @@
                     <label for="date"> Date </label>
                     <input type="text" id="date" name="date" placeholder="Enter Date"/>
                 </div>
-                <button onclick="removeEducation('addEducation-${experienceElementId}')">-</button>
+                <button onclick="removeEducation('addEducation-${educationElementId}')">-</button>
             </div>
         </div>`
     
@@ -149,34 +149,38 @@
         document.getElementById("addReferance").innerHTML += value;
     }
 
-        function removePhone(Id){
-            document.getElementById(Id).remove();
-        }
+    function removePhone(Id){
+        document.getElementById(Id).remove();
+    }
 
-        function removeEmail(Id){
+    function removeEmail(Id){
             document.getElementById(Id).remove();
-        }
+    }
 
-        function removeLink(Id){
-            document.getElementById(Id).remove();
-        }
+    function removeLink(Id){
+        document.getElementById(Id).remove();
+    }
 
-        function removeExperience(Id){
-            document.getElementById(Id).remove();
-        }
+    function removeExperience(Id){
+        document.getElementById(Id).remove();
+    }
         
-        function removeEducation(Id){
-            document.getElementById(Id).remove();
-        }
+    function removeEducation(Id){
+        document.getElementById(Id).remove();
+    }
 
-        function removeSkill(Id){
-            document.getElementById(Id).remove();
-        }
+    function removeSkill(Id){
+        document.getElementById(Id).remove();
+    }
 
-        function removeReferance(Id){
-            document.getElementById(Id).remove();
-        }
+    function removeReferance(Id){
+        document.getElementById(Id).remove();
+    }
 
+
+    function userSave(){
+
+    }
 
 
 let profilePic = document.getElementById("profile-pic");
