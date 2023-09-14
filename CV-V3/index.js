@@ -9,7 +9,11 @@ let user = {
     id: 1,
     userName: "İhsan Eren Delibaş",
     userTitle: "Mekatronik Mühendisi",
-    userAbout:  `<div class="show-more-module--content--cjTh0 show-more-module--with-gradient--1ZDrA" style="max-height:32rem"><div tabindex="0"><div data-purpose="instructor-description"><p>Hello! I'm <strong>Taner Saydam</strong>, an experienced software developer and instructor.</p><p>Through my courses on <strong>Udemy</strong> and <strong>YouTube</strong>, I help participants develop their software skills from beginner to advanced levels.</p><p>Throughout my professional career, I have successfully completed projects in various companies and I am eager to share everything I have learned with you.</p><p>My courses on <strong>Udemy </strong>cover programming languages, web and mobile application development, and much more.</p><p>My courses focus on helping students acquire strong foundations and practical knowledge for real-world applications.</p></div></div></div>`,
+    userAbout:  `Lorem ipsum dolor sit amet, consectetur adipisicing elit. At neque obcaecati recusandae cum perferendis error aspernatur laborum fugit? Dolor ratione incidunt voluptatibus cupiditate nemo aspernatur, repellat officiis saepe esse odio.
+    Veniam sed hic voluptates quidem molestiae eos modi rem sit explicabo voluptatibus aperiam tempore enim quos illum optio ipsa ratione eum totam dolorum in assumenda, accusamus odio dolor aspernatur. Ipsam!
+    Vitae fuga rem inventore perferendis, corrupti adipisci? Eveniet minus ad nihil cumque! Voluptatem labore excepturi alias iste et ab minus ipsum perferendis consequuntur, obcaecati quia nostrum nemo nihil quas cupiditate.
+    Ut, velit corporis. Qui ullam voluptate, temporibus asperiores ex molestias repudiandae rem. Alias quidem, praesentium natus harum ipsa tempora non temporibus architecto perspiciatis ullam, nam voluptatibus. Aperiam recusandae reprehenderit quidem?
+    Odio eius sunt aut aliquid ab cupiditate incidunt veritatis. Repellat labore blanditiis est dolor a ex ipsa, ut optio quas minus nostrum quidem quia corrupti modi sed maiores dicta? Velit.`,
     userPhone: "0534 717 05 68",
     userEmail: "ihsanerendelibas@gmail.com",
     userAddress: "Sakarya/Adapazarı"

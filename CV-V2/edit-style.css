@@ -216,3 +216,55 @@ div button{
     padding-top: 20px;
     background: none;
 }
+
+.media-inputbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+.media-inputbox label{
+    width: 95%;
+    color: #1887C7;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.media-inputbox input{
+    height: 40px;
+    width: 50%;
+    border-radius: 10px;
+    outline: none;
+    background: rgb(46, 46, 46);
+    padding: 0 10px;
+    color: #afafb6;
+}
+
+.mediasDiv{
+    margin-top: 20px;
+}
+
+.selectMedia{
+    height: 30px;
+    width: 20%;
+    /* border-radius: 10px; */
+    outline: none;
+    background: rgb(46, 46, 46);
+    padding: 0 10px;
+    color: #afafb6;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mediasDiv .l{
+    width: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #9e4b07;
+    padding:5px 5px 5px 5px;
+    border-radius: 10px;
+    /* border: 3px solid; */
+}

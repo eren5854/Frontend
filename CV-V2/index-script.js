@@ -9,7 +9,7 @@ function get(){
     document.getElementById("error").style.display = "none";
     
     setTimeout(()=>{
-        axios.get("http://localhost:5000/api/get")
+        axios.get("http://localhost:3000/api/get")
         .then(res => {
             myData = res.data;
             setMyInformation(myData.user);
@@ -150,9 +150,22 @@ function setMyMedias(medias){
 
 function getMedias(media){
     return `
-    <div id="link${mediaEditId}" data-id="${media.id}">
+    <div class="mediasDiv" id="link${mediaEditId}" data-id="${media.id}">
         <label for="link"><i class="fas fa-link contact-icon"></i> Link </label>
-        <input onkeyup="keyupMedias(event, 'link')" type="text" id="link${mediaEditId}" data-id="${media.id}" value="${media.link}" name="link" placeholder="Enter your link"/><button onclick="removeMedias('link${mediaEditId}')">-</button>
+        <input onkeyup="keyupMedias(event, 'link')" type="text" id="link${mediaEditId}" data-id="${media.id}" value="${media.link}" name="link" placeholder="Enter your link"/>
+        <select name="selectMedia" onchange="selectMedia()" id="selectMedia" class="selectMedia" data-id="${media.id}">
+            <option value="${media.title}">${media.title}</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="x">X(old Twitter)</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="github">Github</option>
+            <option value="youtube">Youtube</option>
+            <option value="medium">Medium</option>
+            <option value="">Select</option>
+        </select>
+        <i id="i" data-id="${media.id}" class=" l"></i>
+        <button onclick="removeMedias('link${mediaEditId}')">-</button>
     </div>
     `
 }
@@ -171,7 +184,7 @@ function keyupMedias(event, name){
     const id = element.dataset["id"];
     const index = myData.medias.findIndex(p=> p.id == id);
     // if(name =="title"){
-    //     myData.skill[index].title = lement.value;
+    //     myData.skill[index].title = element.value;
     // }
     // else if(name == "logo"){
     //     myData.skill[index].logo = element.value;
@@ -202,6 +215,34 @@ function removeMedias(elementId){
     myData.medias.splice(index,1);
     element.remove();
     createMedias(myData.medias);
+}
+
+function selectMedia(){
+    let i = document.getElementById("i");
+    let selectMedia = document.getElementById("selectMedia");
+    console.log(selectMedia.value);
+
+    if(selectMedia.value === "github"){
+        i.className = "bx bxl-github l";
+    }
+    else if(selectMedia.value === "linkedin"){
+        i.className = "bx bxl-linkedin l";
+    }
+    else if(selectMedia.value === "facebook"){
+        i.className = "bx bxl-facebook-square l";
+    }
+    else if(selectMedia.value === "instagram"){
+        i.className = "bx bxl-instagram l";
+    }
+    else if(selectMedia.value === "youtube"){
+        i.className = "bx bxl-youtube l";
+    }
+    else if(selectMedia.value === "medium"){
+        i.className = "bx bxl-medium l";
+    }
+    else{
+        i.className = "";
+    }
 }
 //---------------------------------------//
 
