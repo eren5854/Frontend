@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 60%; */
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    background: rgb(26, 26, 26);
+    background-size: cover;
+}
+
+body .edit{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #9e4b07;
+    color: #46dff0;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.main-container{
+    background: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: transparent;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    border: 5px solid #F6530F;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #FF7704;
+
+}
+
+.edit-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #1887C7;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 2px #1887C7;
+}
+
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-inputbox:nth-child(2n){
+    justify-content: end;
+}
+
+.user-inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width:700px){
+    
+}
+
+.user-inputbox label{
+    width: 95%;
+    color: #1887C7;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-inputbox input{
+    height: 40px;
+    width: 95%;
+    border-radius: 10px;
+    outline: none;
+    background: rgb(46, 46, 46);
+    padding: 0 10px;
+    color: #afafb6;
+}
+
+.user-inputbox textarea{
+    height: 100%;
+    width: 200%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    background: rgb(50, 50, 50);
+    color: #afafb6;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.save-btn{
+    display: flex;
+    margin-top: 0px;
+    margin-left: -220px;
+}
+
+.save-btn input{
+    width: 100px;
+    margin-left: 90%;
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+    border-radius: 20px;
+    padding: 5px;
+    border: 5px solid #1887C7;
+    color: #FF7704;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* .contact-save-btn{
+    display: flex;
+    margin-top: -60px;
+    margin-left: -220px;
+} */
+
+.contact-save-btn input{
+    width: 100px;
+    margin-left: 85%;
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+    border-radius: 20px;
+    padding: 5px;
+    border: 5px solid #1887C7;
+    color: #FF7704;
+}
+
+.user-inputbox label button{
+    border: 2px solid #F6530F;
+    border-radius: 20px;
+    background: transparent;
+    color: #1887C7;
+    padding: 2px 5px 0 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container h1 button{
+    border: 2px solid #F6530F;
+    border-radius: 20px;
+    background: transparent;
+    color: #1887C7;
+    padding: 2px 5px 0 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact button{
+    border: 2px solid #F6530F;
+    border-radius: 20px;
+    background: transparent;
+    color: #1887C7;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div button{
+    border: 2px solid #F6530F;
+    border-radius: 20px;
+    background: transparent;
+    color: #1887C7;
+    padding: 0px 10px 1px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-inputbox .img-label{
+    display: flex;
+    margin-right: -93%;
+    margin-top: -40%;
+}
+
+.user-inputbox img{
+    display: flex;
+    margin-top: -30%;
+    margin-right: 0%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.user-inputbox .file-input{
+    margin-right: -130%;
+    margin-top: -35%;
+    padding-top: 20px;
+    background: none;
+}

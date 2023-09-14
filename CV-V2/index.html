@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My CV PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="edit-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="resume" id="blog">
+        <div class="resume_container">
+            <div class="resume_information">
+                <div id="btnVisible" class="btn">
+                    <button class="print-btn" onclick="editShow()"><i class='bx bx-edit-alt' ></i></button>
+                    <button onclick=" addVisible(), window.print()" class="print-btn"><i class='bx bx-printer'></i></button>
+                </div>
+                <div class="resume_profile"> 
+                    <img src="img/1.jpg" alt="default pic" class="image"/>
+                    <div class="details">
+                        <p class="title" id="userName"></p>
+                        <p class="subtitle" id="userTitle"></p>
+                    </div>
+                </div>
+
+                <div class="resume_side-section">
+                    <p class="title">CONTACT</p>
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <i class="fas fa-phone contact-icon"></i>
+                        </div>
+                        <div class="col">
+                            <span id="userPhone"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <i class="fas fa-envelope contact-icon"></i>
+                        </div>
+                        <div class="col">
+                            <span id="userEmail"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-auto">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                        </div>
+                        <div class="col">
+                            <span id="userAddress"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume_side-section">
+                    <p class="title">FOLLOW ME</p>
+                    <div id="medias" class="list">
+                        <!-- <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="https://github.com/eren5854?tab=repositories"><i class="bx bxl-github"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="https://www.linkedin.com/in/ihsan-eren-deliba%C5%9F-208581159/"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="#"><i class="bx bxl-youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-auto">
+                                <a href="#"><i class="bx bxl-medium"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="resume_side-section">
+                    <p class="title">SKILLS</p>
+                    <div id="skills" class="logos">
+                        <!-- <div class="progress">
+                            <div class="my-2">HTML</div>
+                            <img class="html" src="img/html.png">       
+                        </div>
+    
+                        <div class="progress">
+                                <div class="my-2">CSS</div>
+                                <img class="css" src="img/css.png">       
+                        </div>
+    
+                        <div class="progress">
+                            <div class="my-2">JS</div>
+                            <img class="js" src="img/js.png">
+                        </div>
+    
+                        <div class="progress">
+                            <div class="my-2">C#</div>
+                            <img class="csharp" src="img/csharp.png">                
+                        </div>
+    
+                        
+                        <div class="progress">
+                            <div class="my-2">MS SQL</div>
+                            <img class="mssql" src="img/mssql.png">  
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="resume_information">
+                <div class="resume_intro">
+                    <h1 >ABOUT ME</h1>
+                    <div id="userAbout"></div>
+                </div>
+
+                <div class="resume_section">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="title">
+                            EXPERIENCE
+                        </p>
+                    </div>
+                    <div class="experiences" id="experiences">
+                        <!-- <div class="details">
+                            <div class="year">January2018 - February 2018</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-By Partners Group</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">May 2019 - June 2019</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-Balsu Gıda</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">July 2019-August 2019</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-Xinerji Software</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">February 2022 - June 2022</div>
+                            <div class="info">
+                                <p class="title"><b>Intern Engineer</b>-Yektamot</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">August 2022 - August 2023</div>
+                            <div class="info">
+                                <p class="title"><b>Test Engineer</b>-YMTM Technology</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="resume_section">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <p class="title">EDUCATION</p>
+                    </div>
+                    <div id="educations">
+                        <!-- <div class="details">
+                            <div class="year">2017-2022</div>
+                            <div class="info">
+                                <p class="title"><b>Mechanical Engineering </b>- Technology Faculty - Licance</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="year">2023-Present</div>
+                            <div class="info">
+                                <p class="title"><b>Computer Engineering </b>- Institute of Natural Sciences - Master Degree</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="resume_section">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p class="title">REFERANCE</p>
+                    </div>
+                    <div id="referances">
+                        <!-- <div class="details-referance">
+                            <div class="name"><b>Mustafa Çağrı Kutlu</b></div>
+                            <p class="title"><b>Doctoral faculty member</b></p>
+                            <p class="title">Sakarya Uygulamalı Bilimler Üniversitesi</p>
+                            <div class="row mb-2">
+                                <div class="col-auto">
+                                    <i class="fas fa-phone contact-icon"></i>
+                                </div>
+                                <div class="col">
+                                    <span>+90 05xx xxx xx xx</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-auto">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                </div>
+                                <div class="col">
+                                    <span>xxxxx@xxxxxx</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="x"><a href="#"><i class='bx bx-printer'></i></a></div> -->
+            </div>
+        </div>
+        <div id="edit-container" class="main-container">
+            <div class="container">
+                <h1 class="edit-title">USER</h1>
+                <form action="#">
+                    <div class="user-info">
+                        <div class="user-inputbox">
+                            <label id="l" for="username">Full Name</label>
+                            <input onkeyup="keyupSetInput('userName',event)" type="text" id="nameText" placeholder="Enter your name"/>
+                        </div>
+        
+                        <div class="user-inputbox">
+                            <label for="edit-title">Title</label>
+                            <input onkeyup="keyupSetInput('userTitle',event)" type="text" id="titleText" name="title-text" placeholder="Enter your title"/>
+                        </div>
+        
+                        <div class="user-inputbox">
+                            <label for="about">About</label>
+                            <textarea onkeyup="keyupSetInput('userAbout',event)" name="about-text" id="aboutText" placeholder="Enter your about"></textarea>
+                        </div>
+    
+                    </div>
+    
+                    <div class="user-inputbox">
+                        <label class="img-label" for="image">Image</label>
+                        <img src="img/profile.png" id="profile-pic">
+                        <input class="file-input" type="file" accept="image/jpg, image/png, image/jpeg" id="input-file">
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <h1 class="edit-title">Contact And Follow <button onclick="addMedias()" id="link-add-btn">+</button></h1>
+                <div action="#">
+                    <div class="contact">
+                        <div id="phoneText" class="user-inputbox">
+                            <label for="phone"><i class="fas fa-phone contact-icon"></i>  Phone 
+                                <!-- <button onclick="addPhone()" id="phone-add-btn">+</button> -->
+                            </label>
+                            <input type="tel" onkeyup="keyupSetInput('userPhone',event)" id="phone" name="tel" placeholder="Enter your phone number"/>
+                        </div>
+        
+                        <div id="addemail" class="user-inputbox">
+                            <label for="email"><i class="fas fa-envelope contact-icon"></i> Email
+                                 <!-- <button onclick="addMail()" id="email-add-btn">+</button> -->
+                                </label>
+                            <input type="text" onkeyup="keyupSetInput('userEmail',event)" id="email" name="email" placeholder="Enter your email"/>
+                        </div>
+                        
+                        <div id="addlink" class="user-inputbox">
+                            <button onclick="addMedias()" id="link-add-btn">+</button>
+                            <!-- <div>
+                                <label for="link"><i class="fas fa-link contact-icon"></i> Link <button onclick="addMedias()" id="link-add-btn">+</button></label>
+                                <input type="text" onkeyup="keyupSetInput('link',event)" id="link" name="link" placeholder="Enter your link"/>
+                            </div> -->
+                        </div>
+
+                        <div id="addaddress" class="user-inputbox">
+                            <label for="address"><i class="fas fa-address contact-icon"></i> Address
+                                 <!-- <button onclick="addMail()" id="email-add-btn">+</button> -->
+                                </label>
+                            <input type="text" onkeyup="keyupSetInput('userAddress',event)" id="address" name="address" placeholder="Enter your address"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <h1 class="edit-title">Skills <button onclick="addSkill()" id="skill-add-btn">+</button></h1>
+                <div id="skill-div" action="#">
+                    <div  id="addskill" class="contact">
+                        <!-- <div class="user-inputbox">
+                            <label for="skill"> Skill </label>
+                            <input type="text" id="skill" name="skill" placeholder="Enter your skill"/>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <h1 class="edit-title">Experiences <button onclick="addExperiences()" id="experience-add-btn">+</button></h1>
+    
+                <div id="addExperience" action="#">
+    
+                    <!-- <div class="contact">
+                        <div id="addCompany" class="user-inputbox">
+                            <label for="company"> Company </label>
+                            <input type="text" id="company" name="company" placeholder="Enter Company"/>
+                        </div>
+        
+                        <div id="addPosition" class="user-inputbox">
+                            <label for="position"> Position </label>
+                            <input type="text" id="position" name="position" placeholder="Enter your Position"/>
+                        </div>
+                        
+                        <div id="addDate" class="user-inputbox">
+                            <label for="date"> Date </label>
+                            <input type="date" id="date" name="date" placeholder="Enter Date"/>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+    
+            <div class="container">
+                <h1 class="edit-title">Educations <button onclick="addEducations()" id="education-add-btn">+</button></h1>
+    
+                <div id="addeducation" action="#">
+                    <div class="contact">
+                        <div id="addSection" class="user-inputbox">
+                            <label for="section"> Section </label>
+                            <input type="text" id="section" name="section" placeholder="Enter your section"/>
+                        </div>
+        
+                        <div id="addUniversity" class="user-inputbox">
+                            <label for="university"> University </label>
+                            <input type="text" id="university" name="university" placeholder="Enter your university"/>
+                        </div>
+    
+                        <div id="addDegree" class="user-inputbox">
+                            <label for="degree"> Degree </label>
+                            <input type="text" id="degree" name="degree" placeholder="Enter your degree"/>
+                        </div>
+                        
+                        <div id="addDate" class="user-inputbox">
+                            <label for="date"> Date </label>
+                            <input type="text" id="date" name="date" placeholder="Enter Date"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="edit-title">Referance <button onclick="addReferances()" id="referance-add-btn">+</button></h1>
+                <div id="addreferance" action="#">
+                    <div class="user-info">
+                        <div class="user-inputbox">
+                            <label for="username">Full Name</label>
+                            <input type="text" id="name-text" name="name-text" placeholder="Enter your referance name"/>
+                        </div>
+        
+                        <div class="user-inputbox">
+                            <label for="title">Title</label>
+                            <input type="text" id="title-text" name="title-text" placeholder="Enter your referance title"/>
+                        </div>
+        
+                        <div id="addphone" class="user-inputbox">
+                            <label for="phone"><i class="fas fa-phone contact-icon"></i>  Phone </label>
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" name="tel" placeholder="Enter your referance phone number"/>
+                        </div>
+        
+                        <div id="addemail" class="user-inputbox">
+                            <label for="email"><i class="fas fa-envelope contact-icon"></i> Email </label>
+                            <input type="text" id="email" name="email" placeholder="Enter your referance email"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="save()" id="saveBtn">Save</button>
+                <button id="cancelBtn" onclick="editHide()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex" id="spinner">
+        <h1 class="load-text">Sayfa Yükleniyor...</h1>
+        <div class="spinner"></div>
+    </div>
+    <div class="d-flex" id="error" style="display: none;">
+        <h1>Page Error! We are working on</h1>
+        <button id="try" onclick="tryAgain()">Try again</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="index-script.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
